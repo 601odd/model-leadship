@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "pub"
   "homepage": "https://601odd.github.io/model-leadship",
   "scripts": {
     "dev": "vite",
