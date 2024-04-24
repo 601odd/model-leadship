@@ -1,0 +1,11 @@
+.appbar-content{
+  background-image: url('../../assets/images/background.jpg');
+  height: 200px;
+  align-items: flex-start;
+  padding: 30px 40px;
+  background-size: cover;
+}
+.input-control{
+background-color: black;
+
+}
