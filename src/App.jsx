@@ -7,11 +7,11 @@ import { GlobalStyles } from "./styles/global/GlobalStyles";
 
 const routes = [
   {
-    path: "/",
+    path: "/model-leadship",
     element: <BaseLayout />,
     children: [
       {
-        path: "/",
+        path: "/model-leadship",
         element: <Dashboard />,
       },
     ],
