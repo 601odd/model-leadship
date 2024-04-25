@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link,NavLink } from "react-router-dom";
 import { Icons } from "../../assets/icons";
 import { SidebarWrap } from "./Sidebar.styles";
 import { MdOutlineClose } from "react-icons/md";
@@ -29,20 +29,20 @@ const Sidebar = () => {
         <div className="sidebar-menu">
           <ul className="menu-list">
             <li className="menu-item">
-              <Link to="/" className="menu-link active">
+              <NavLink   to="/model-leadship" end className="menu-link" activeclassname="active">
                 <span className="menu-link-icon">
                   <img src={Icons.Chart} alt="" />
                 </span>
                 <span className="menu-link-text">Dashboard</span>
-              </Link>
+              </NavLink>
             </li>
             <li className="menu-item">
-              <Link to="/" className="menu-link">
+              <NavLink   to="/model-leadship/event-total" className="menu-link" activeclassname="active">
                 <span className="menu-link-icon">
                   <img src={Icons.Graph} alt="" />
                 </span>
-                <span className="menu-link-text">Leaderboard</span>
-              </Link>
+                <span className="menu-link-text">event-total</span>
+              </NavLink>
             </li>
             <li className="menu-item">
               <Link to="/" className="menu-link">
@@ -100,3 +100,5 @@ const Sidebar = () => {
 };
 
 export default Sidebar;
+
+
