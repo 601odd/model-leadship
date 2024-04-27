@@ -3,4 +3,16 @@
   padding: 0 20px;
   position: relative;
   bottom:100px;
+  animation: slideOut 4s ease forwards;
+
 }
+
+@keyframes slideOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+

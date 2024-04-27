@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { BaseLayout } from "./components";
-import { Dashboard, PageNotFound,EventTotal } from "./screens";
+import { Dashboard, PageNotFound,EventTotal,Login,Volunteer } from "./screens";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./styles/theme/theme";
 import { GlobalStyles } from "./styles/global/GlobalStyles";
@@ -12,26 +12,24 @@ const routes = [
     children: [
       {
         path: "/model-leadship",
-        element: <Dashboard />,
+        element: <Login />,
 
       },
       {
         path: "/model-leadship/event-total",
         element: <EventTotal />,
-
       },
+      {
+        path: "/model-leadship/volunteer",
+        element: <Volunteer />,
+      },
+      {
+        path: "/model-leadship/dashboard",
+        element: <Dashboard />,
+      },
+
     ],
   },
-  // {
-  //   path: "/event-total",
-  //   element: <BaseLayout />,
-  //   children: [
-  //     {
-  //       path: "/event-total",
-  //       element: <EventTotal />,
-  //     },
-  //   ],
-  // },
   {
     path: "*",
     element: <PageNotFound />,

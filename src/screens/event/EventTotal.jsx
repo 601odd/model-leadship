@@ -78,12 +78,6 @@ const EventTotal = () =>{
     <div className={styles.page}>
       <EventForm   changeData={setData} />
       <Table columns={columns} dataSource={data} />
-      {/* <Pagination
-      total={85}
-      showTotal={(total) => `Total ${total} items`}
-      defaultPageSize={20}
-      defaultCurrent={1}
-    /> */}
     </div>
   )
 }

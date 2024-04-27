@@ -29,7 +29,7 @@ const Sidebar = () => {
         <div className="sidebar-menu">
           <ul className="menu-list">
             <li className="menu-item">
-              <NavLink   to="/model-leadship" end className="menu-link" activeclassname="active">
+              <NavLink   to="/model-leadship/dashboard" end className="menu-link" activeclassname="active">
                 <span className="menu-link-icon">
                   <img src={Icons.Chart} alt="" />
                 </span>
@@ -45,22 +45,22 @@ const Sidebar = () => {
               </NavLink>
             </li>
             <li className="menu-item">
-              <Link to="/" className="menu-link">
+              <NavLink to="/model-leadship/volunteer" className="menu-link">
                 <span className="menu-link-icon">
-                  <img src={Icons.Cart} alt="" />
+                  <img src={Icons.Analytics} alt="" />
                 </span>
-                <span className="menu-link-text">Order</span>
-              </Link>
+                <span className="menu-link-text">volunteer</span>
+              </NavLink>
             </li>
             <li className="menu-item">
-              <Link to="/" className="menu-link">
+              <Link to="/model-leadship/3d" className="menu-link">
                 <span className="menu-link-icon">
-                  <img src={Icons.Bag} alt="" />
+                  <img src={Icons.Cog} alt="" />
                 </span>
-                <span className="menu-link-text">Products</span>
+                <span className="menu-link-text">3D</span>
               </Link>
             </li>
-            <li className="menu-item">
+            {/* <li className="menu-item">
               <Link to="/" className="menu-link">
                 <span className="menu-link-icon">
                   <img src={Icons.Analytics} alt="" />
@@ -91,7 +91,7 @@ const Sidebar = () => {
                 </span>
                 <span className="menu-link-text">Sign Out</span>
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

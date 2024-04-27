@@ -1,62 +1,47 @@
 
-import { LockOutlined, UserOutlined } from '@ant-design/icons';
-import { Button, Checkbox, Form, Input } from 'antd';
+import styles from "./login.module.scss"
+import { useNavigate } from 'react-router-dom';
+import  { useEffect, useState } from 'react';
+
 const App = () => {
-  const onFinish = (values) => {
-    console.log('Received values of form: ', values);
-  };
-  return (
-    <Form
-      name="normal_login"
-      className="login-form"
-      initialValues={{
-        remember: true,
-      }}
-      onFinish={onFinish}
-    >
-      <Form.Item
-        name="username"
-        rules={[
-          {
-            required: true,
-            message: 'Please input your Username!',
-          },
-        ]}
-      >
-        <Input prefix={<UserOutlined className="site-form-item-icon" />} placeholder="Username" />
-      </Form.Item>
-      <Form.Item
-        name="password"
-        rules={[
-          {
-            required: true,
-            message: 'Please input your Password!',
-          },
-        ]}
-      >
-        <Input
-          prefix={<LockOutlined className="site-form-item-icon" />}
-          type="password"
-          placeholder="Password"
-        />
-      </Form.Item>
-      <Form.Item>
-        <Form.Item name="remember" valuePropName="checked" noStyle>
-          <Checkbox>Remember me</Checkbox>
-        </Form.Item>
+  const navigate = useNavigate();
+  const [prevScrollPos, setPrevScrollPos] = useState(window.scrollY);
+  useEffect(() => {
+    console.log(window.scrollY);
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+      console.log(currentScrollPos,prevScrollPos);
+      if (prevScrollPos < currentScrollPos) {
+        const container = document.getElementById('container');
+        container.style.animation = `${styles.slideOut} 1s ease forwards`;
+        setTimeout(() => {
+          navigate('/model-leadship/dashboard');
+        }, 1000);
+      }
+      setPrevScrollPos(currentScrollPos);
+    };
 
-        <a className="login-form-forgot" href="">
-          Forgot password
-        </a>
-      </Form.Item>
+    window.addEventListener('scroll', handleScroll);
 
-      <Form.Item>
-        <Button type="primary" htmlType="submit" className="login-form-button">
-          Log in
-        </Button>
-        Or <a href="">register now!</a>
-      </Form.Item>
-    </Form>
-  );
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [navigate, prevScrollPos]);
+  return <div className={styles.container} id="container">
+    <h2 style={{textAlign:'center',paddingTop:'20px'}}>朝阳“同舟”基层共治平台数据总览</h2>
+  <div className={styles.wapper}>
+    <div >
+      <div className={styles.rectangle} style={{position:'relative',left:'70px'}}>事件上报总量 <span>34534</span></div>
+      <div className={styles.rectangle} style={{position:'relative',right:'70px'}}>群众满意度<span>92%</span></div>
+    </div>
+    <div>
+      <div className={styles.rectangle}>平台总人数 <span>445</span></div>
+      <div className={styles.rectangle}>志愿者人数<span>87</span></div>
+    </div><div>
+      <div className={styles.rectangle} style={{position:'relative',left:'70px'}}>积分投放总数<span>104521</span></div>
+      <div className={styles.rectangle} style={{position:'relative',right:'70px'}}>积分回购总数<span>258</span></div>
+    </div>
+  </div>
+</div>
 };
 export default App;

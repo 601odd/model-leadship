@@ -12,7 +12,7 @@ export const SalesBlockWrap = styled.div`
     flex-wrap: wrap;
 
     .block-title {
-      margin-bottom: 4px;   
+      margin-bottom: 4px;
     }
 
   }
@@ -101,7 +101,7 @@ export const SalesBlockWrap = styled.div`
       font-size: 22px;
       margin-top: 12px;
       margin-bottom: 4px;
-      color: ${(props) => props.theme.colors.white};
+      color: ${(props) => props.theme.colors.black};
     }
 
     .card-item-text {
