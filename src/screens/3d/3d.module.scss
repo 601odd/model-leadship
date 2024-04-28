@@ -1,0 +1,42 @@
+html,
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+
+
+
+    .btnContainer {
+        position: relative;
+        left: 20px;
+        top: 40px;
+        z-index: 10000;
+    }
+
+    .btnContainer button {
+        padding: 10px 14px;
+        box-sizing: border-box;
+        border: none;
+        background-color: #919aac;
+        border-radius: 2px;
+        color: #fff;
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .btnContainer button:focus {
+        outline: none;
+    }
+
+    .btnContainer .btn1 {
+        padding: 10px 14px;
+        background: #3876ff;
+        border-radius: 2px;
+        border: none;
+        box-sizing: border-box;
+        font-size: 14px;
+        color: #fff;
+        margin-right: 10px;
+        line-height: 14px;
+        font-family: PingFangSC-Regular;
+    }

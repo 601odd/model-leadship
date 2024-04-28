@@ -13,6 +13,7 @@ export const SalesBlockWrap = styled.div`
 
     .block-title {
       margin-bottom: 4px;
+      color:white;
     }
 
   }
@@ -56,28 +57,34 @@ export const SalesBlockWrap = styled.div`
     `}
 
     &.card-misty-rose {
-      background-color: ${(props) => props.theme.colors.mistyRose};
+      background-color: #019D84;
       .card-item-icon {
         background-color: ${(props) => props.theme.colors.pink};
       }
     }
 
     &.card-latte {
-      background-color: ${(props) => props.theme.colors.latte};
+      background-color: #4D927D;
       .card-item-icon {
         background-color: ${(props) => props.theme.colors.salmon};
       }
     }
 
     &.card-nyanza {
-      background-color: ${(props) => props.theme.colors.nyanza};
+      background-color: #B76365;
+      .card-item-icon {
+        background-color: ${(props) => props.theme.colors.malachite};
+      }
+    }
+    &.card-nyanza2 {
+      background-color: #FFA746;
       .card-item-icon {
         background-color: ${(props) => props.theme.colors.malachite};
       }
     }
 
     &.card-pale-purple {
-      background-color: ${(props) => props.theme.colors.palePurple};
+      background-color: #FF6452;
       .card-item-icon {
         background-color: ${(props) => props.theme.colors.violet};
       }
@@ -106,6 +113,7 @@ export const SalesBlockWrap = styled.div`
 
     .card-item-text {
       font-weight: 600;
+      color:black;
     }
 
     .card-item-sm-text {

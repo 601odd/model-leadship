@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { BaseLayout } from "./components";
-import { Dashboard, PageNotFound,EventTotal,Login,Volunteer } from "./screens";
+import { Dashboard, PageNotFound,EventTotal,Login,Volunteer,Three3D } from "./screens";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./styles/theme/theme";
 import { GlobalStyles } from "./styles/global/GlobalStyles";
@@ -26,6 +26,10 @@ const routes = [
       {
         path: "/model-leadship/dashboard",
         element: <Dashboard />,
+      },
+      {
+        path: "/model-leadship/3d",
+        element: <Three3D />,
       },
 
     ],

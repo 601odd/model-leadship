@@ -22,7 +22,7 @@ export const TargetRealityWrap = styled.div`
 
       &:first-child {
         .info-item-icon {
-          background-color: #e2fff3;
+          background-color: ${(props) => props.theme.colors.emerald};
         }
         .info-item-val {
           color: ${(props) => props.theme.colors.emerald};
@@ -33,7 +33,7 @@ export const TargetRealityWrap = styled.div`
       &:last-child {
         margin-bottom: 0;
         .info-item-icon {
-          background-color: #fff4de;
+          background-color: ${(props) => props.theme.colors.orange};
         }
         .info-item-val {
           color: ${(props) => props.theme.colors.orange};

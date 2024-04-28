@@ -46,7 +46,7 @@ const Revenue = () => {
             }}
           >
             <CartesianGrid
-              stroke="#f8f8f9"
+              stroke="#fff"
               horizontal={true}
               vertical={false}
               strokeDasharray="3 0"
@@ -61,7 +61,7 @@ const Revenue = () => {
                   y={y + 25}
                   dy={dy}
                   textAnchor="middle"
-                  fill="#7B91B0"
+                  fill="#fff"
                   fontSize={14}
                 >
                   {payload.value}
@@ -74,7 +74,7 @@ const Revenue = () => {
               axisLine={false}
               tickSize={0}
               tick={{
-                fill: "#7B91B0",
+                fill: "#fff",
                 fontSize: 14,
               }}
               interval={0}
@@ -94,7 +94,7 @@ const Revenue = () => {
             />
             <Bar
               dataKey="online"
-              fill="#0095FF"
+              fill="#F14572"
               activeBar={false}
               isAnimationActive={false}
               radius={[4, 4, 4, 4]}
@@ -102,7 +102,7 @@ const Revenue = () => {
             />
             <Bar
               dataKey="offline"
-              fill="#00E096"
+              fill="#FA6E2F"
               activeBar={false}
               isAnimationActive={false}
               radius={[4, 4, 4, 4]}

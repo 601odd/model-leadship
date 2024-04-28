@@ -71,38 +71,38 @@ const Customer = () => {
           >
             <defs>
               <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="5%" stopColor="#0095FF" stopOpacity={0.2} />
-                <stop offset="95%" stopColor="#0095FF" stopOpacity={0} />
+                <stop offset="5%" stopColor="#F14572" stopOpacity={0.2} />
+                <stop offset="95%" stopColor="#F14572" stopOpacity={0} />
               </linearGradient>
               <linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="5%" stopColor="#07E098" stopOpacity={0.2} />
-                <stop offset="95%" stopColor="#07E098" stopOpacity={0} />
+                <stop offset="5%" stopColor="#FA6E2F" stopOpacity={0.2} />
+                <stop offset="95%" stopColor="#FA6E2F" stopOpacity={0} />
               </linearGradient>
             </defs>
             <Tooltip content={<CustomTooltipContent />} />
             <Area
               type="monotone"
               dataKey="last_month"
-              stroke="#0095FF"
+              stroke="#F14572"
               fillOpacity={1}
               fill="url(#colorUv)"
               strokeWidth={2}
               dot={{
-                stroke: "#0095FF",
-                fill: "#0095FF",
+                stroke: "#F14572",
+                fill: "#F14572",
               }}
             />
             <Legend formatter={formatLegendValue} />
             <Area
               type="monotone"
               dataKey="this_month"
-              stroke="#07E098"
+              stroke="#FA6E2F"
               fillOpacity={1}
               fill="url(#colorPv)"
               strokeWidth={2}
               dot={{
-                stroke: "#07E098",
-                fill: "#07E098",
+                stroke: "#FA6E2F",
+                fill: "#FA6E2F",
               }}
             />
           </AreaChart>

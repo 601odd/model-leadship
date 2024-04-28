@@ -42,7 +42,7 @@ export const TopProductsWrap = styled.div`
       thead {
         th {
           border-bottom: 1px solid ${(props) => props.theme.colors.aliceBlue};
-          color: ${(props) => props.theme.colors.gray700};
+          color: ${(props) => props.theme.colors.white};
           font-weight: 400;
           text-align: left;
 
@@ -54,31 +54,31 @@ export const TopProductsWrap = styled.div`
 
       tbody {
         td {
-          color: ${(props) => props.theme.colors.gray700};
+          color: ${(props) => props.theme.colors.white};
           border-bottom: 1px solid ${(props) => props.theme.colors.aliceBlue};
         }
 
         tr {
           &:nth-child(1) {
             .tbl-progress-bar {
-              background-color: ${(props) => props.theme.colors.columbiaBlue};
+              background-color: ${(props) => props.theme.colors.aquamarine};
 
               .bar-fill {
-                background-color: ${(props) => props.theme.colors.dodgerBlue};
+                background-color: #019D84;
               }
             }
 
             .tbl-badge {
               background-color: ${(props) => props.theme.colors.aliceBlue};
-              color: ${(props) => props.theme.colors.dodgerBlue};
-              border: 1px solid ${(props) => props.theme.colors.dodgerBlue};
+              color: #019D84;
+              border: 1px solid #019D84;
             }
           }
 
           &:nth-child(2) {
             .tbl-progress-bar {
-              background-color: ${(props) => props.theme.colors.aquamarine};
-              color: ${(props) => props.theme.colors.emerald};
+              background-color: #ffcdd2;
+              color: #B76365;
 
               .bar-fill {
                 background-color: ${(props) => props.theme.colors.emerald};
@@ -86,7 +86,7 @@ export const TopProductsWrap = styled.div`
             }
 
             .tbl-badge {
-              background-color: ${(props) => props.theme.colors.nyanza};
+              background-color: #ffcdd2;
               color: ${(props) => props.theme.colors.emerald};
               border: 1px solid ${(props) => props.theme.colors.emerald};
             }

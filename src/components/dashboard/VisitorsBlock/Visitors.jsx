@@ -67,7 +67,7 @@ const VisitorsBlock = () => {
             }}
           >
             <CartesianGrid
-              stroke="#f8f8f9"
+              stroke="#fff"
               horizontal={true}
               vertical={false}
               strokeDasharray="3 0"
@@ -83,7 +83,7 @@ const VisitorsBlock = () => {
                   y={y + 20}
                   dy={dy}
                   textAnchor="middle"
-                  fill="#7B91B0"
+                  fill="#fff"
                   fontSize={14}
                 >
                   {payload.value}
@@ -95,7 +95,7 @@ const VisitorsBlock = () => {
               axisLine={false}
               ticks={[100, 200, 300, 400]}
               tick={{
-                fill: "#7B91B0",
+                fill: "#fff",
                 fontSize: 14,
               }}
             />
@@ -114,21 +114,21 @@ const VisitorsBlock = () => {
               strokeWidth={4}
               type="basis"
               dataKey="loyal_customer"
-              stroke="#A700FF"
+              stroke="#019D84"
             />
             <Line
               dot={false}
               strokeWidth={4}
               type="basis"
               dataKey="new_customer"
-              stroke="#F64E60"
+              stroke="#FFA746"
             />
             <Line
               dot={false}
               strokeWidth={4}
               type="basis"
               dataKey="unique_customer"
-              stroke="#3CD856"
+              stroke="#B76365"
             />
           </LineChart>
         </ResponsiveContainer>

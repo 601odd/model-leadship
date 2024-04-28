@@ -45,7 +45,7 @@ const SalesBlock = () => {
             <p className="card-item-text text"> 平台总人数</p>
             {/* <span className="card-item-sm-text">+1.2% from yesterday</span> */}
           </div>
-          
+
           <div className="card-item card-pale-purple">
             <div className="card-item-icon">
               <img src={Icons.CardCustomer} alt="" />
@@ -54,7 +54,7 @@ const SalesBlock = () => {
             <p className="card-item-text text">志愿者</p>
             {/* <span className="card-item-sm-text">+0.5% from yesterday</span> */}
           </div>
-          <div className="card-item card-nyanza">
+          <div className="card-item card-nyanza2">
             <div className="card-item-icon">
               <img src={Icons.CardProduct} alt="" />
             </div>

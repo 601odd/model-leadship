@@ -29,13 +29,13 @@ const TargetReality = () => {
           >
             <Bar
               dataKey="reality"
-              fill="#4ab58e"
+              fill="#F14572"
               radius={[4, 4, 4, 4]}
               barSize={16}
             />
             <Bar
               dataKey="target"
-              fill="#ffcf00"
+              fill="#FA6E2F"
               radius={[4, 4, 4, 4]}
               barSize={16}
             />

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>天空盒</title>
+    </head>
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #mapContainer {
+            width: 100%;
+            height: 100%;
+        }
+
+        .btnContainer {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            z-index: 10000;
+        }
+
+        .btnContainer button {
+            padding: 10px 14px;
+            box-sizing: border-box;
+            border: none;
+            background-color: #919aac;
+            border-radius: 2px;
+            color: #fff;
+            font-size: 14px;
+            line-height: 14px;
+        }
+
+        .btnContainer button:focus {
+            outline: none;
+        }
+
+        .btnContainer .btn1 {
+            padding: 10px 14px;
+            background: #3876ff;
+            border-radius: 2px;
+            border: none;
+            box-sizing: border-box;
+            font-size: 14px;
+            color: #fff;
+            line-height: 14px;
+            font-family: PingFangSC-Regular;
+        }
+    </style>
+
+    <body>
+        <div class="btnContainer">
+            <button class="btn1">点击切换天空</button>
+            <button class="btn2">切换视角</button>
+        </div>
+        <div id="mapContainer"></div>
+        <script
+            charset="utf-8"
+            src="https://map.qq.com/api/gljs?v=1.exp&libraries=service&key=YK6BZ-SKE6B-XPHUZ-NAO3S-2TVZO-KABSZ"
+
+        ></script>
+        <script src="maptest_modify.js"></script>
+    </body>
+</html>
