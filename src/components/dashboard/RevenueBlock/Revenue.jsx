@@ -13,7 +13,7 @@ import {
 } from "recharts";
 
 const formatTooltipValue = (value) => {
-  return `${value} sales`;
+  return `${value} people`;
 };
 
 const formatYAxisLabel = (value) => {
@@ -21,7 +21,7 @@ const formatYAxisLabel = (value) => {
 };
 
 const formatLegendValue = (value) => {
-  return value.charAt(0).toUpperCase() + value.slice(1) + " Sales";
+  return value.charAt(0).toUpperCase() + value.slice(1);
 };
 
 const Revenue = () => {
@@ -93,7 +93,7 @@ const Revenue = () => {
               }}
             />
             <Bar
-              dataKey="online"
+              dataKey="this_month"
               fill="#F14572"
               activeBar={false}
               isAnimationActive={false}
@@ -101,7 +101,7 @@ const Revenue = () => {
               barSize={18}
             />
             <Bar
-              dataKey="offline"
+              dataKey="last_month"
               fill="#FA6E2F"
               activeBar={false}
               isAnimationActive={false}

@@ -28,13 +28,13 @@ const TargetReality = () => {
             }}
           >
             <Bar
-              dataKey="reality"
+              dataKey="release_points"
               fill="#F14572"
               radius={[4, 4, 4, 4]}
               barSize={16}
             />
             <Bar
-              dataKey="target"
+              dataKey="repurchase_points"
               fill="#FA6E2F"
               radius={[4, 4, 4, 4]}
               barSize={16}
@@ -71,12 +71,12 @@ const TargetReality = () => {
                 <img src={Icons.BagGreen} alt="" />
               </div>
               <div className="info-item-text">
-                <h4 className="info-item-title">Reality Sales</h4>
-                <p className="info-item-subtitle">Global</p>
+                <h4 className="info-item-title">release_points</h4>
+                <p className="info-item-subtitle">Monthly</p>
               </div>
             </div>
             <div className="info-item-r">
-              <p className="info-item-val">8.823</p>
+              <p className="info-item-val">72</p>
             </div>
           </div>
           <div className="legend-info-item">
@@ -85,12 +85,12 @@ const TargetReality = () => {
                 <img src={Icons.TicketYellow} alt="" />
               </div>
               <div className="info-item-text">
-                <h4 className="info-item-title">Target Sales</h4>
-                <p className="info-item-subtitle">Commercial</p>
+                <h4 className="info-item-title">repurchase_points</h4>
+                <p className="info-item-subtitle">Monthly</p>
               </div>
             </div>
             <div className="info-item-r">
-              <p className="info-item-val">12.122</p>
+              <p className="info-item-val">65</p>
             </div>
           </div>
         </div>

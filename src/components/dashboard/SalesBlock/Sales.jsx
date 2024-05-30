@@ -25,7 +25,7 @@ const SalesBlock = () => {
             <div className="card-item-icon">
               <img src={Icons.CardSales} alt="" />
             </div>
-            <div className="card-item-value">5</div>
+            <div className="card-item-value">34566</div>
             <p className="card-item-text text">事件上报总量</p>
             {/* <span className="card-item-sm-text">+8% from yesterday</span> */}
           </div>
@@ -33,7 +33,7 @@ const SalesBlock = () => {
             <div className="card-item-icon">
               <img src={Icons.CardOrder} alt="" />
             </div>
-            <div className="card-item-value">0%</div>
+            <div className="card-item-value">89%</div>
             <p className="card-item-text text"> 群众满意度</p>
             {/* <span className="card-item-sm-text">+5% from yesterday</span> */}
           </div>
@@ -41,7 +41,7 @@ const SalesBlock = () => {
             <div className="card-item-icon">
               <img src={Icons.CardProduct} alt="" />
             </div>
-            <div className="card-item-value">47</div>
+            <div className="card-item-value">448</div>
             <p className="card-item-text text"> 平台总人数</p>
             {/* <span className="card-item-sm-text">+1.2% from yesterday</span> */}
           </div>
@@ -50,7 +50,7 @@ const SalesBlock = () => {
             <div className="card-item-icon">
               <img src={Icons.CardCustomer} alt="" />
             </div>
-            <div className="card-item-value"> 26</div>
+            <div className="card-item-value"> 87</div>
             <p className="card-item-text text">志愿者</p>
             {/* <span className="card-item-sm-text">+0.5% from yesterday</span> */}
           </div>
@@ -58,7 +58,7 @@ const SalesBlock = () => {
             <div className="card-item-icon">
               <img src={Icons.CardProduct} alt="" />
             </div>
-            <div className="card-item-value">3</div>
+            <div className="card-item-value">9</div>
             <p className="card-item-text text"> 市场主体</p>
             {/* <span className="card-item-sm-text">+1.2% from yesterday</span> */}
           </div>

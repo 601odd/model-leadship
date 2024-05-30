@@ -113,21 +113,21 @@ const VisitorsBlock = () => {
               dot={false}
               strokeWidth={4}
               type="basis"
-              dataKey="loyal_customer"
+              dataKey="reported_quantity"
               stroke="#019D84"
             />
             <Line
               dot={false}
               strokeWidth={4}
               type="basis"
-              dataKey="new_customer"
+              dataKey="completed_quantity"
               stroke="#FFA746"
             />
             <Line
               dot={false}
               strokeWidth={4}
               type="basis"
-              dataKey="unique_customer"
+              dataKey="inspection_task"
               stroke="#B76365"
             />
           </LineChart>
