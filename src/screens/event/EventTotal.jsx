@@ -11,7 +11,7 @@ const StatusOptions = {
 const columns = [
   {
     title: '序号',
-    render: (_,record,index)=>`${ index + 1 }`,
+    render: (_,{index})=>`${index}`,
   },
   {
     title: '事件标题',
@@ -63,8 +63,8 @@ const columns = [
     key: 'action',
     render: (_, record) => (
       <Space size="middle">
-        <a>Invite {record.name}</a>
-        <a>Delete</a>
+        <a>添加 {record.name}</a>
+        <a>删除</a>
       </Space>
     ),
   },
